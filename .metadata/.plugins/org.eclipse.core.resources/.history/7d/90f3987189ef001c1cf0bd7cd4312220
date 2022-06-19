@@ -1,0 +1,12 @@
+package ch01;
+
+public class Ex001 {
+
+	public static void main(String[] args) {
+		int[][][] school = new int[3][3][12];
+		
+		school[0][0] = new int[9]; 
+
+	}
+
+}

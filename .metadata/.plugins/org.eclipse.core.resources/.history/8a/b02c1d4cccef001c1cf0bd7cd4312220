@@ -1,0 +1,26 @@
+package ch01;
+
+import lombok.RequiredArgsConstructor;
+
+public class Ex003 {
+
+	public static void main(String[] args) {
+		Person per1 = new Person(1);
+		Person per2 = new Person(1);
+		Person per3 = new Person(1);
+
+	}
+
+}
+
+@RequiredArgsConstructor
+class Person{
+	private final int no;
+	private String name;
+	private String phone;
+	
+	public Person(int no, String name) {
+		this.no = no;
+		this.name = name;
+	}
+}

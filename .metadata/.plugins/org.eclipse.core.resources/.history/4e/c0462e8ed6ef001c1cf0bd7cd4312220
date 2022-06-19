@@ -1,0 +1,33 @@
+package ch01;
+
+import java.util.Arrays;
+
+import lombok.Builder;
+import lombok.RequiredArgsConstructor;
+
+public class Ex003 {
+
+	public static void main(String[] args) {
+		String[] str = {"a","b"};
+		
+		Arrays.stream(str).map(s->s+'`').forEach(System.out::println);
+				
+				
+
+	}
+
+}
+
+@RequiredArgsConstructor
+class Person{
+	private final int no;
+	private String name;
+	private String phone;
+	
+	@Builder
+	public Person(int no, String name, String phone) {
+		this.no = no;
+		this.name = name;
+		this.phone = phone;
+	}
+}

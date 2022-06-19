@@ -1,0 +1,21 @@
+package ch01;
+
+public class Ex003 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Person{
+	private final int no;
+	private String name;
+	private String phone;
+	
+	public Person(int no, String name) {
+		this.no = no;
+		this.name = name;
+	}
+}
